@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D7142BDD2E12FCD500F831F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7142BDC2E12FCD500F831F1 /* GoogleService-Info.plist */; };
+		D7142BE02E12FD4B00F831F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D7142BDF2E12FD4B00F831F1 /* FirebaseAnalytics */; };
+		D7142BE22E12FD4B00F831F1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D7142BE12E12FD4B00F831F1 /* FirebaseAuth */; };
+		D7142BE42E12FD4B00F831F1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D7142BE32E12FD4B00F831F1 /* FirebaseFirestore */; };
+		D7142BE82E12FF1100F831F1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D7142BE72E12FF0800F831F1 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D7142BC02E12FB9000F831F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +35,8 @@
 		D7142BB22E12FB8E00F831F1 /* PreschoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreschoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7142BBF2E12FB9000F831F1 /* PreschoolAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreschoolAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7142BC92E12FB9000F831F1 /* PreschoolAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreschoolAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7142BDC2E12FCD500F831F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7142BE72E12FF0800F831F1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7142BE02E12FD4B00F831F1 /* FirebaseAnalytics in Frameworks */,
+				D7142BE22E12FD4B00F831F1 /* FirebaseAuth in Frameworks */,
+				D7142BE42E12FD4B00F831F1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,8 @@
 		D7142BA92E12FB8E00F831F1 = {
 			isa = PBXGroup;
 			children = (
+				D7142BE72E12FF0800F831F1 /* .gitignore */,
+				D7142BDC2E12FCD500F831F1 /* GoogleService-Info.plist */,
 				D7142BB42E12FB8E00F831F1 /* PreschoolApp */,
 				D7142BC22E12FB9000F831F1 /* PreschoolAppTests */,
 				D7142BCC2E12FB9000F831F1 /* PreschoolAppUITests */,
@@ -112,6 +127,9 @@
 			);
 			name = PreschoolApp;
 			packageProductDependencies = (
+				D7142BDF2E12FD4B00F831F1 /* FirebaseAnalytics */,
+				D7142BE12E12FD4B00F831F1 /* FirebaseAuth */,
+				D7142BE32E12FD4B00F831F1 /* FirebaseFirestore */,
 			);
 			productName = PreschoolApp;
 			productReference = D7142BB22E12FB8E00F831F1 /* PreschoolApp.app */;
@@ -195,6 +213,9 @@
 			);
 			mainGroup = D7142BA92E12FB8E00F831F1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D7142BDE2E12FD4B00F831F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D7142BB32E12FB8E00F831F1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7142BE82E12FF1100F831F1 /* .gitignore in Resources */,
+				D7142BDD2E12FCD500F831F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +581,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7142BDE2E12FD4B00F831F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7142BDF2E12FD4B00F831F1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7142BDE2E12FD4B00F831F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D7142BE12E12FD4B00F831F1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7142BDE2E12FD4B00F831F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D7142BE32E12FD4B00F831F1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7142BDE2E12FD4B00F831F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7142BAA2E12FB8E00F831F1 /* Project object */;
 }
