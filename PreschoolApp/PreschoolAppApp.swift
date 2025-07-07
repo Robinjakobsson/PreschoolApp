@@ -24,7 +24,7 @@ struct PreschoolAppApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        ContentView()
+        LoginView()
       }
     }
   }
